@@ -1,0 +1,25 @@
+# AURUM·AI / GDX111 — Python dependencies
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# For GPU support, install the CUDA torch wheel SEPARATELY before this file,
+# since requirements.txt installs the default-PyPI torch (CPU-only):
+#   pip uninstall torch -y
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+#
+# CRITICAL: pandas must be <3.0. On the current stack (Python 3.14 + CUDA
+# torch 2.12 + numpy 2.x), calling torch.load() then any pandas operation
+# segfaults with STATUS_ACCESS_VIOLATION. See PROJECT_NOTES.md changelog
+# entry 2026-05-27. Do not lift this pin until torch publishes wheels
+# validated against pandas 3.x ABI.
+
+pandas<3
+numpy<3
+torch
+yfinance
+pytrends
+matplotlib
+scipy
+requests
+openpyxl

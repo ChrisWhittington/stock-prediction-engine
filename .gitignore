@@ -1,0 +1,34 @@
+# Generated output / artifacts (large, regenerable)
+*_output/
+*_backtest/
+aem_backtest/
+aurum_backtest/
+qqq_backtest/
+rotation_backtest/
+shel_backtest/
+smh_backtest/
+tsm_backtest/
+xle_backtest/
+
+# Archives & extracted data
+*.zip
+files/
+
+# Logs
+*.log
+
+# Trained models & figures
+*.pt
+*.png
+
+# Editor / IDE temp & swap files
+*~
+*.ysn~
+*.suo
+.vs/
+__pycache__/
+*.pyc
+
+# OS junk
+Thumbs.db
+.DS_Store
