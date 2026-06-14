@@ -1,0 +1,129 @@
+
+========================================
+Candidate: fwd20_lb30_IC0.3661_DA0.8220_Sh5.05_seed82299
+  Annual return     :      +8.49%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      4.134
+  Max drawdown      :      -8.50%   B&H max drawdown  :     -56.47%
+  Win rate          :       76.1%  (active days)
+  Days long         :       23.0%
+
+========================================
+Candidate: fwd20_lb30_IC0.3835_DA0.7462_Sh2.99_seed48688
+  Annual return     :      +8.99%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      4.217
+  Max drawdown      :      -5.01%   B&H max drawdown  :     -56.47%
+  Win rate          :       84.0%  (active days)
+  Days long         :       20.9%
+
+========================================
+Candidate: fwd20_lb30_IC0.3957_DA0.7311_Sh3.70_seed30738
+  Annual return     :      +4.05%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      2.960
+  Max drawdown      :     -10.84%   B&H max drawdown  :     -56.47%
+  Win rate          :       66.3%  (active days)
+  Days long         :       24.9%
+
+========================================
+Candidate: fwd20_lb30_IC0.3995_DA0.7955_Sh4.99_seed60176
+  Annual return     :     +13.95%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      5.214
+  Max drawdown      :      -8.87%   B&H max drawdown  :     -56.47%
+  Win rate          :       77.2%  (active days)
+  Days long         :       32.4%
+
+========================================
+Candidate: fwd20_lb30_IC0.4176_DA0.7917_Sh3.88_seed49539
+  Annual return     :      +8.36%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      4.073
+  Max drawdown      :     -11.83%   B&H max drawdown  :     -56.47%
+  Win rate          :       71.6%  (active days)
+  Days long         :       27.3%
+
+========================================
+Candidate: fwd20_lb30_IC0.4232_DA0.7727_Sh3.85_seed98625
+  Annual return     :     +17.54%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      5.784
+  Max drawdown      :      -9.14%   B&H max drawdown  :     -56.47%
+  Win rate          :       85.0%  (active days)
+  Days long         :       32.7%
+
+========================================
+Candidate: fwd20_lb30_IC0.4361_DA0.8182_Sh5.36_seed79287
+  Annual return     :      +9.38%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      4.160
+  Max drawdown      :      -6.95%   B&H max drawdown  :     -56.47%
+  Win rate          :       73.7%  (active days)
+  Days long         :       26.3%
+
+========================================
+Candidate: fwd20_lb30_IC0.4423_DA0.7008_Sh3.43_seed42756
+  Annual return     :      +8.02%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      3.897
+  Max drawdown      :     -17.44%   B&H max drawdown  :     -56.47%
+  Win rate          :       76.4%  (active days)
+  Days long         :       24.6%
+
+========================================
+Candidate: fwd20_lb30_IC0.4511_DA0.7841_Sh5.30_seed53933
+  Annual return     :     +18.37%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      6.090
+  Max drawdown      :      -3.55%   B&H max drawdown  :     -56.47%
+  Win rate          :       91.2%  (active days)
+  Days long         :       29.0%
+
+========================================
+Candidate: fwd20_lb30_IC0.4602_DA0.7689_Sh4.21_seed75725
+  Annual return     :      +3.99%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      3.174
+  Max drawdown      :      -6.19%   B&H max drawdown  :     -56.47%
+  Win rate          :       78.5%  (active days)
+  Days long         :       15.1%
+
+========================================
+Candidate: fwd20_lb30_IC0.4753_DA0.6667_Sh2.73_seed75423
+  Annual return     :     +11.42%  (calendar-time CAGR)   B&H annual return :     +34.58%  (CAGR)
+  Sharpe ratio      :      4.681
+  Max drawdown      :      -9.53%   B&H max drawdown  :     -56.47%
+  Win rate          :       80.5%  (active days)
+  Days long         :       27.0%
+
+========================================
+Candidate: fwd20_lb30_IC0.4762_DA0.7614_Sh4.42_seed95635
+  Annual return     :     +19.18%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      6.054
+  Max drawdown      :      -5.16%   B&H max drawdown  :     -56.47%
+  Win rate          :       84.3%  (active days)
+  Days long         :       33.4%
+
+========================================
+Candidate: fwd20_lb30_IC0.4865_DA0.7386_Sh3.87_seed1582
+  Annual return     :      +2.88%  (calendar-time CAGR)   B&H annual return :     +33.22%  (CAGR)
+  Sharpe ratio      :      6.707
+  Max drawdown      :      -1.59%   B&H max drawdown  :     -45.49%
+  Win rate          :       74.0%  (active days)
+  Days long         :       38.0%
+
+========================================
+Candidate: fwd20_lb30_IC0.4889_DA0.7500_Sh4.27_seed40572
+  Annual return     :     +11.89%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      4.822
+  Max drawdown      :      -6.73%   B&H max drawdown  :     -56.47%
+  Win rate          :       70.5%  (active days)
+  Days long         :       37.1%
+
+========================================
+Candidate: fwd20_lb30_IC0.5341_DA0.6780_Sh2.47_seed11694
+  Annual return     :      +3.78%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      2.861
+  Max drawdown      :     -16.61%   B&H max drawdown  :     -56.47%
+  Win rate          :       57.3%  (active days)
+  Days long         :       39.3%
+
+========================================
+Candidate: fwd20_lb30_IC0.5499_DA0.8030_Sh4.79_seed36487
+  Annual return     :      +4.38%  (calendar-time CAGR)   B&H annual return :     +34.46%  (CAGR)
+  Sharpe ratio      :      2.928
+  Max drawdown      :     -13.27%   B&H max drawdown  :     -56.47%
+  Win rate          :       70.1%  (active days)
+  Days long         :       21.1%
+
