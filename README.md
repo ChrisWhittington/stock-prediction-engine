@@ -1,5 +1,15 @@
 # AURUM·AI — Multi-ETF ML Trading Engine
 
+> [!CAUTION]
+> **Disclaimer:** A personal research project — not investment advice. Backtested
+> results are historical simulations and do not guarantee future performance. Never
+> risk real money based on scenario back-tests. Always trial out trading strategies
+> in real time using paper, not real money. What may work in one trading regime/time
+> frame may not work in another. In my humble opinion it is extremely difficult for
+> amateur investors to get ahead of the professionals, even using AI and neural
+> networks. It is extremely easy to lose all your money. Slippage and friction don't
+> help. Use absolutely at your own risk.
+
 A machine-learning research pipeline that trains LSTM models to forecast forward
 returns for a set of ETFs/stocks, backtests them with realistic costs, and runs a
 **confidence-ranked rotation strategy** that allocates capital across the strongest
@@ -9,10 +19,6 @@ The flagship instrument is **GDX** (gold miners); **XLE** (energy) and **QQQ**
 (Nasdaq-100) act as diversifying rotation members. Several other tickers
 (AEM, SHEL, TSM, SMH, plus the `aurum` GDX line) have standalone trainer/backtest
 pipelines for research.
-
-> ⚠️ **Disclaimer:** This is a personal research project, not investment advice.
-> Backtested results are historical simulations and do not guarantee future
-> performance. Use at your own risk.
 
 > [!TIP]
 > ### 🤖 Best run with Claude Code
