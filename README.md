@@ -14,6 +14,39 @@ pipelines for research.
 > Backtested results are historical simulations and do not guarantee future
 > performance. Use at your own risk.
 
+> [!TIP]
+> ### 🤖 Best run with Claude Code
+>
+> This project is designed to be driven with **[Claude Code](https://claude.com/claude-code)**,
+> Anthropic's agentic coding CLI. The repo ships with a detailed `PROJECT_NOTES.md`
+> research log that Claude Code uses as working memory — so it can run trainers and
+> backtests, interpret candidate sweeps, switch deployed seeds, and keep the notes
+> in sync with the code for you.
+>
+> **Setup**
+>
+> 1. Install Claude Code (requires Node.js 18+):
+>    ```bash
+>    npm install -g @anthropic-ai/claude-code
+>    ```
+> 2. Install the Python dependencies (see [Setup](#setup) below) and pull the
+>    LFS model weights so Claude Code can run inference:
+>    ```bash
+>    pip install -r requirements.txt
+>    git lfs install && git lfs pull
+>    ```
+> 3. Start a session from the repo root:
+>    ```bash
+>    cd stock-prediction-engine
+>    claude
+>    ```
+> 4. On first launch, authenticate with your Anthropic account (Claude Pro/Max) or
+>    an API key when prompted.
+>
+> Then just ask in plain English — e.g. *"run the QQQ backtest and compare it to the
+> deployed seed"*, *"start an overnight XLE seed search"*, or *"update the deployed
+> seeds in PROJECT_NOTES to match the code."*
+
 ---
 
 ## How it works
