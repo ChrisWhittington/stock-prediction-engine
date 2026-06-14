@@ -1,0 +1,9 @@
+AURUM·AI Rotation Backtest Summary
+========================================
+total_return_%: 1436.8313
+annual_return_%: 23.3581
+volatility_%: 3.8651
+sharpe: 5.4543
+max_drawdown_%: -34.2724
+long_days_%: 48.0793
+final_capital_$: 1537148.3100
