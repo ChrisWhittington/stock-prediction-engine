@@ -2,7 +2,7 @@
 
 > Running notebook for the multi-ETF ML trading project. Update this file as decisions are made so context survives between chat sessions.
 
-_Last updated: 2026-05-27_
+_Last updated: 2026-06-14_
 
 ---
 
@@ -12,11 +12,13 @@ Source of truth: `DEPLOYED_SEEDS` dict in `aurum_signal.py` (~line 49).
 
 | ETF | Seed   | Output dir       | Standalone CAGR | Sharpe | Max DD   | Rotation contribution |
 |-----|--------|------------------|-----------------|--------|----------|------------------------|
-| GDX | 21921  | `aurum_output/`  | +30.32%         | 6.94   | -12.05%  | (primary — full first-dibs allocation) |
-| XLE | 97239  | `xle_output/`    | +22.60%         | 5.01   | -11.16%  | secondary (strength-ranked vs QQQ) |
-| QQQ | 74174  | `qqq_output/`    | +12.79%         | 5.41   | -1.85%   | secondary (strength-ranked vs XLE) |
+| GDX | 162    | `aurum_output/`  | +42.38%         | 7.93   | -6.59%   | (primary — full first-dibs allocation) |
+| XLE | 18264  | `xle_output/`    | +23.92%         | 7.07   | -11.08%  | secondary (strength-ranked vs QQQ) |
+| QQQ | 32928  | `qqq_output/`    | +58.31%         | 9.53   | -8.73%   | secondary (strength-ranked vs XLE) |
 
-**Current full-history rotation backtest:** $2,509,233 over 16.3 years from $100k start. CAGR +21.9%. Premium over GDX-only +7.6pp. Volatility 13.9% (GDX-only line).
+> Seeds updated 2026-06-14 to the **v9 champions** (bootstrap-validated) currently set in `DEPLOYED_SEEDS`. Standalone metrics above are each seed's own `candidate_results.txt` backtest. The prior deployment (GDX 21921 / XLE 97239 / QQQ 74174) is retained in the candidate tables and changelog below as historical reference.
+
+**Current full-history rotation backtest:** $2,509,233 over 16.3 years from $100k start. CAGR +21.9%. Premium over GDX-only +7.6pp. Volatility 13.9% (GDX-only line). ⚠ This figure predates the v9-champion seed switch (2026-06-14) — re-run `aurum_signal.py` for a current number.
 
 **XLE and QQQ are now deployed via strength-ranked cascade** (sort by confidence percentile descending, stronger gets first dibs on idle cash). Changed from fixed XLE-first on 2026-05-28. Both must still pass deployment gate (pred > min_sig AND conf ≥ 0.40).
 
@@ -280,3 +282,4 @@ Option 3 is the safest — current sample size is only 10 seeds, which isn't eno
 - **2026-05-28** — **Clean QQQ A/B finally completed** with patched deploy. Re-tested 74174 (baseline reproduced: $2,426,154 / +21.6% / +7.4pp — within 1.2% of yesterday's $2,454,828). Tested 57437 ($1,870,626 / +19.7% / +5.4pp — loses by $555k), 41597 ($2,159,165 / +20.8% / +6.5pp — loses by $267k), 64978 ($1,985,972 / +20.1% / +5.9pp — loses by $440k). **All three new-pipeline candidates lose to 74174 in rotation under the old XLE-first cascade.** Conclusion: 74174 stays deployed; the standalone-best ≠ rotation-best lesson holds for QQQ as well as XLE.
 - **2026-05-28** — **Implemented strength-ranked rotation cascade.** Modified `run_full_history_simulation()` to deploy XLE and QQQ in order of confidence percentile (strongest first) rather than fixed XLE-first priority. Both must still pass the deployment gate (pred > min_sig AND conf ≥ 0.40). A/B with current deployed seeds (GDX 21921, XLE 97239, QQQ 74174): **rotation $2,509,233 / +21.9% / +7.6pp** — improvement of +$83k / +0.3pp CAGR / +0.2pp premium vs the old XLE-first cascade ($2,426k baseline). Most years unchanged; the gains come from 2018 (rotation +17.1% → +20.3%) and 2022 (+17.6% → +19.8%) where QQQ had unusually high conviction on the same days XLE was also bullish. Old-cascade-only winners get squeezed out and the high-conviction QQQ days capture more value. Also patched the live signal output (two branches) and the chart helper to use the same strength-ranked logic for consistency.
 - **2026-05-28** — **Re-A/B-tested the new-pipeline QQQ candidates under the new cascade.** Full comparison: 74174 $2,509,233 (+$83k vs old cascade), 41597 $2,263,534 (+$104k), 64978 $2,008,431 (+$22k), 57437 $1,829,346 (−$41k). **74174 wins under either cascade by a wide margin** ($246–$680k ahead of new-pipeline candidates). The new cascade doesn't change the winner — it just improves all of them slightly (except 57437). Particularly damning: seed 64978 deployed QQQ 28.6% of 2022 (highest QQQ allocation of any candidate in any year tested) and the rotation still made only +13.4% vs 74174's +19.8% — definitive evidence that "when you're bullish matters more than how often". **Final state: GDX=21921, XLE=97239, QQQ=74174, strength-ranked cascade active.** Best configuration produces $2,509,233 rotation final over 16.3 years.
+- **2026-06-14** — **Deployed seeds switched to the v9 champions: GDX 162, XLE 18264, QQQ 32928** (bootstrap-validated; now set in `DEPLOYED_SEEDS` in `aurum_signal.py` ~L49). Standalone `candidate_results.txt` backtests: GDX 162 → +42.38% CAGR / Sharpe 7.93 / MDD -6.59% / Win 85.8%; XLE 18264 → +23.92% / 7.07 / -11.08% / 79.1%; QQQ 32928 → +58.31% / 9.53 / -8.73% / 80.0%. Deployed-seeds table at top of file updated to match. The prior production seeds (21921 / 97239 / 74174) and their A/B history above are kept as historical reference. The headline rotation figure ($2,509,233) predates this switch — re-run `aurum_signal.py` to refresh it under the new seeds.
